@@ -73,3 +73,7 @@ a{color:var(--navy)}
   nav a{margin-left:16px}
   .brand-logo{width:52px;height:52px}
 }
+
+.knight { margin: 26px 0 6px; }
+.knight img { width: 100%; height: auto; display: block; border: 1px solid #24405e; border-radius: 10px; }
+.knight figcaption { color: #9fb4c8; font-size: 14px; margin-top: 8px; text-align: center; }
