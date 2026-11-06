@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trust — General Shield, Cybersecurity by General Federal Industries</title>
+<meta name="description" content="How General Shield earns trust: a signed authorization before any check, a published methodology, written rules of engagement, a sample report on request, and a plain list of what we never claim.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap topbar">
+    <div class="brand">
+      <img class="brand-logo" src="gfi-logo.png" alt="General Federal Industries — gold eagle logo" width="1600" height="1600">
+      <div class="firm">General Shield
+        <small>Cybersecurity by General Federal Industries</small>
+      </div>
+    </div>
+    <nav class="sans">
+      <a href="index.html">Home</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#proof">Proof</a>
+      <a href="index.html#how">How It Works</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+  <div class="rule"></div>
+</header>
+
+<div class="wrap hero">
+  <h1>How General Shield earns trust</h1>
+  <p>We sell security checks. That means our real product is trust — so this page puts everything in the open: the law every engagement runs under, exactly what we check, the rules we sign before any work, and a plain list of the claims we refuse to make.</p>
+</div>
+
+<section class="wrap" id="law">
+  <h2>The Authorization-First Law</h2>
+  <p class="lead">Nothing runs on trust alone — it runs on a signature.</p>
+  <ul class="plain">
+    <li><strong>Signed authorization before any active scanning.</strong> A named owner or officer of the business signs a one-page authorization naming the exact domains and systems covered. No signature, no scan — not even a "quick look."</li>
+    <li><strong>Client-owned systems only.</strong> We check only systems the signer owns or is formally responsible for. Never a competitor's site, never a customer's site, never "a site my client uses."</li>
+    <li><strong>Non-intrusive methods only.</strong> Public response headers, public DNS records, certificate handshakes, and normal page fetches — the same things any browser sees. No exploitation, no password attacks, no denial-of-service, no social engineering, ever.</li>
+    <li><strong>The client's report belongs to the client.</strong> Findings are delivered only to the signer, are never sold or shared, and are never used in marketing without separate written permission.</li>
+    <li><strong>Scheduling and safety.</strong> Deep scans run at an agreed time, with a named contact on the client side, and stop immediately if asked.</li>
+  </ul>
+</section>
+
+<section class="wrap" id="method">
+  <h2>What We Check — Our Methodology, in the Open</h2>
+  <p class="lead">No secret sauce. A General Shield check is detect-and-report, using only what a visitor's browser, a mail server, or a standard network tool can already see:</p>
+  <ul class="plain">
+    <li><strong>Security headers audit</strong> — the protective settings the site sends to browsers: content security policy, HTTPS enforcement, clickjacking and content-type protections, referrer and permissions policies.</li>
+    <li><strong>Encryption (TLS) check</strong> — certificate validity, expiry and name match, which protocol versions the site accepts, and whether plain HTTP redirects to HTTPS.</li>
+    <li><strong>Cookie safety flags</strong> — whether the cookies the site sets carry the standard Secure, HttpOnly, and SameSite flags.</li>
+    <li><strong>Service check</strong> — plain connection attempts to a small set of standard ports (web, mail, remote-login, database, alternate-web) on the named hosts only, recording which ones answer and any banner the server itself offers. We send no commands to those services.</li>
+    <li><strong>Email protection records</strong> — the domain's public SPF, DMARC, and DKIM records: whether a stranger could convincingly pretend to email as you.</li>
+    <li><strong>Version disclosures</strong> — where the site announces exact software versions, we note it and point to the vendor's current advisories. We do not test whether any specific known flaw is present.</li>
+    <li><strong>Technology fingerprint notes</strong> — what the site publicly reveals about the software it runs, for your awareness.</li>
+  </ul>
+  <p class="mt20">Every finding in a report is written the same way: a severity, what we found, what it means, and how to fix it — concrete enough to hand to a web developer or hosting provider.</p>
+</section>
+
+<section class="wrap" id="rules">
+  <h2>The Rules Are in Writing — and Signed Before Any Work</h2>
+  <p class="lead">Every engagement runs under a written Rules of Engagement, signed alongside the authorization. In summary:</p>
+  <ul class="plain">
+    <li><strong>Named systems only.</strong> Only the systems listed in the agreement are checked. Subdomains and third-party systems are out unless they are listed too.</li>
+    <li><strong>An agreed testing window.</strong> Checks run on the dates and hours written down — outside the window, nothing runs.</li>
+    <li><strong>A never list with no exceptions.</strong> No accessing or copying your data. No password attacks of any kind. No exploits or payloads. No denial-of-service or load testing. No social engineering. No changes to anything. No physical access attempts.</li>
+    <li><strong>Stop conditions.</strong> You can stop a check with one call or email, at any time, for any reason. We also stop on our own if a system looks unstable, if we encounter data we were not meant to see, or if anything unexpected happens — and we resume only with your written OK.</li>
+    <li><strong>Critical means a phone call.</strong> If a check turns up something actively dangerous — a database answering the whole internet, private data publicly exposed — we stop testing that system and call you the same day, in plain English, before anything else. We do not dig deeper to "see how bad it is."</li>
+  </ul>
+  <p class="mt20"><strong>The full rules are signed before any work.</strong> There is no version of a General Shield engagement that starts without them.</p>
+</section>
+
+<section class="wrap" id="sample">
+  <h2>See a Real Report Before You Decide</h2>
+  <p class="lead">A sample report exists — from a real run of our own engine against our own platform, findings and all — and it is available on request. Read exactly what a report looks like, how findings are worded, and what a fix list contains, before you ever sign anything. Ask us through the contact links on the <a href="index.html#contact">home page</a>.</p>
+</section>
+
+<section class="wrap" id="never-claim">
+  <h2>What We Never Claim</h2>
+  <p class="lead">Security companies are easy to start and hard to check. So here is what General Shield will not say — stated proudly, because honesty is the product:</p>
+  <ul class="plain">
+    <li><strong>We never call anything "unhackable."</strong> A clean grade means the outside doors and windows we can see are in good shape. No honest firm can promise a system cannot be hacked, and we will not pretend otherwise.</li>
+    <li><strong>We offer no breach warranty.</strong> Some large firms advertise multi-million-dollar warranties; read theirs closely and you will find bundles, multi-year terms, and strict eligibility conditions underneath. We do not have underwriting behind us, so we do not sell the promise. What we stand behind is the accuracy of our report and a re-check after your fixes.</li>
+    <li><strong>We do not claim a 24/7 security operations center.</strong> We are a small, named team running scheduled checks with same-day calls on critical findings. If that ever changes, this page will say so — after it is true, not before.</li>
+    <li><strong>We display no certifications we do not hold.</strong> Industry certifications such as SOC 2 and ISO 27001 are earned through audits over months. We are a new firm and do not hold them yet, so no badges appear on this site. When one is earned, it will appear here with its date.</li>
+    <li><strong>We never call a scan a penetration test.</strong> Our checks look from the outside and report. Penetration testing — a human actively trying to get in — is a different, deeper engagement that we do not sell today, and we will not dress our service up in its name.</li>
+    <li><strong>No borrowed logos, no invented clients.</strong> When clients let us tell their story, their names will appear here with their permission. Until then, our proof is below: our own grades.</li>
+  </ul>
+</section>
+
+<section class="wrap" id="own-grades">
+  <h2>Our Own House, Graded in Public</h2>
+  <p class="lead">Before we offered this to anyone, we pointed the machine at ourselves — and published what it said.</p>
+  <div class="grid">
+    <div class="card reveal">
+      <p class="grade">C &rarr; D</p>
+      <h3>Our own platform: GeneralOS</h3>
+      <p>Our CRM platform graded C on the first version of the engine. When the stronger second version learned to map open ports and services, it found more surface on our own house — and the grade dropped to D. Nobody here softened the number.</p>
+    </div>
+    <div class="card reveal">
+      <p class="grade">F</p>
+      <h3>Our own public website</h3>
+      <p>Our public company website scored lower still — an F — partly because its hosting platform does not let owners set the protections our scanner looks for. We say so plainly, because that is the job.</p>
+    </div>
+  </div>
+  <p class="mt20 lead">Our machine grades us harder as it gets smarter. It will do the same for you — honestly.</p>
+</section>
+
+<section class="wrap" id="commitments">
+  <h2>Our Transparency Commitments</h2>
+  <ul class="plain">
+    <li><strong>Findings go only to the signer.</strong> Your report is delivered to the person who signed the authorization — nobody else.</li>
+    <li><strong>Your report is never marketing material.</strong> We will not sell it, share it, or quote from it without your separate written permission.</li>
+    <li><strong>Working notes have a lifetime.</strong> Notes from a check are kept only for the period written into your engagement paperwork, then deleted — sooner if you ask.</li>
+    <li><strong>Critical findings are called in the same day.</strong> Not buried in a report you might read next week.</li>
+    <li><strong>Our own results stay public.</strong> Our grades are on this site whether they flatter us or not — including when a stronger engine lowers them.</li>
+    <li><strong>This page stays current.</strong> If a commitment here stops being true, the page changes — before the next client signs, not after.</li>
+  </ul>
+  <p class="mt20"><a class="btn" href="index.html">Back to General Shield &rarr;</a></p>
+</section>
+
+<footer>
+  <div class="wrap sans">
+    <p>General Shield — a General Federal Industries product line. Yucca Valley, California.</p>
+    <p class="mt14"><strong>One price, everything included. No hidden fees.</strong></p>
+    <p class="mt14">&copy; <span id="year">2026</span> General Federal Industries LLC. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
