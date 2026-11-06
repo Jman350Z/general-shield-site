@@ -1,0 +1,75 @@
+/* General Shield — microsite styles.
+   Family of the General Federal Industries site: same layout patterns
+   (topbar, gold rule, serif body, card grid, navy call-to-action band),
+   with the GFI brand colors — navy #0B3C6C, gold #F2A900.
+   All presentation lives here so the page can run under a strict
+   Content-Security-Policy (style-src 'self'). */
+:root{
+  --ink:#1a2332; --navy:#0B3C6C; --navy-dark:#16283f; --slate:#42506b; --line:#d8dee8;
+  --accent:#F2A900; --accent-deep:#8a6d2f; --bg:#ffffff; --panel:#f4f6f9; --max:1080px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,'Times New Roman',serif;color:var(--ink);background:var(--bg);line-height:1.6}
+.sans{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
+header{background:var(--navy);color:#fff}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.topbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:22px 0}
+.brand{display:flex;align-items:center;gap:16px}
+.brand-logo{display:block;width:64px;height:64px;border:1px solid var(--line);background:#fff}
+.firm{font-size:1.45rem;letter-spacing:.04em;line-height:1.25}
+.firm small{display:block;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:#f5cf6b;margin-top:4px}
+nav a{color:#dbe4f0;text-decoration:none;font-size:.95rem;margin-left:26px}
+nav a:hover{color:#fff;text-decoration:underline}
+nav a.active{color:var(--accent);text-decoration:underline}
+.rule{height:3px;background:var(--accent)}
+.hero{padding:56px 0 44px;border-bottom:1px solid var(--line)}
+.hero h1{font-size:2.1rem;font-weight:normal;line-height:1.25;max-width:22em}
+.hero p{margin-top:18px;font-size:1.08rem;color:var(--slate);max-width:44em}
+.law{border:1px solid var(--accent);background:#fdf8ec;padding:18px 20px;max-width:760px;margin-top:26px}
+.law h3{font-size:1.05rem;margin-bottom:6px}
+.law p{margin-top:0;font-size:1rem;color:var(--ink);max-width:none}
+section{padding:44px 0}
+h2{font-size:1.35rem;font-weight:normal;letter-spacing:.02em;margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--accent);display:inline-block}
+p.lead{font-size:1.05rem;color:var(--ink);max-width:46em}
+p{max-width:46em}
+.mt14{margin-top:14px}
+.mt20{margin-top:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:22px}
+.grid.steps{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:var(--panel);border:1px solid var(--line);padding:24px}
+.card h3{font-size:1.08rem;font-weight:bold;margin-bottom:8px}
+.card p{color:var(--slate);font-size:.98rem;max-width:none}
+.grade{font-size:2rem;font-weight:bold;color:var(--navy);letter-spacing:.03em;margin-bottom:6px}
+.step-num{display:inline-block;font-size:1.3rem;font-weight:bold;color:var(--navy-dark);
+  border:2px solid var(--accent);border-radius:50%;width:44px;height:44px;line-height:40px;
+  text-align:center;margin-bottom:10px;background:#fff}
+ul.plain{list-style:none;margin-top:10px;max-width:46em}
+ul.plain li{padding:7px 0 7px 20px;position:relative;border-bottom:1px solid var(--line)}
+ul.plain li:last-child{border-bottom:none}
+ul.plain li::before{content:"—";position:absolute;left:0;color:var(--accent-deep)}
+.cta{background:var(--navy);color:#fff;padding:40px 0}
+.cta h2{color:#fff;border-bottom-color:var(--accent)}
+.cta p{color:#dbe4f0;max-width:44em}
+.cta a{color:#fff}
+footer{padding:26px 0 34px;color:var(--slate);font-size:.9rem}
+footer p{max-width:none}
+a{color:var(--navy)}
+.btn{display:inline-block;background:var(--navy);color:#fff;text-decoration:none;
+  padding:12px 22px;font-size:1rem;border:1px solid var(--navy);cursor:pointer}
+.btn:hover{background:var(--accent-deep);border-color:var(--accent-deep);color:#fff}
+.btn.secondary{background:#fff;color:var(--navy)}
+.btn.secondary:hover{background:var(--panel);color:var(--navy)}
+.btn.light{background:#fff;color:var(--navy);border-color:#fff}
+.btn.light:hover{background:var(--accent);border-color:var(--accent);color:var(--navy-dark)}
+
+/* Reveal-on-scroll: only applies when site.js added the .js flag,
+   so content is never hidden from a visitor without JavaScript. */
+.js .reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+.js .reveal.in{opacity:1;transform:none}
+
+@media (max-width:640px){
+  .hero{padding:38px 0 30px}
+  .hero h1{font-size:1.6rem}
+  nav a{margin-left:16px}
+  .brand-logo{width:52px;height:52px}
+}
